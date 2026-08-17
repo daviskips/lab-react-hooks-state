@@ -20,7 +20,7 @@ function App() {
   }
 
   function addToCart(item) {
-    setCart([...cart, item])
+    setCart((previousCart) => [...previousCart, item])
   }
 
   // 3. Render HTML and components
